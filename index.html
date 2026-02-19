@@ -3,34 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>Fadly Aprilla - Portfolio</title>
 
 <style>
 body {
     margin: 0;
     background: #000;
+    font-family: Arial, sans-serif;
 }
+
+/* Wrapper tiap section */
 .section {
     width: 100%;
-    display: block;
+    padding: 75px 0; /* 75 atas + 75 bawah = 150px seperti di Photoshop */
+    box-sizing: border-box;
 }
-img {
+
+/* Header tanpa jarak atas */
+.section:first-child {
+    padding-top: 0;
+}
+
+/* Footer tanpa jarak bawah */
+.section:last-child {
+    padding-bottom: 0;
+}
+
+/* Image layout mengikuti lebar PSD (1440px) */
+.section img {
     width: 100%;
+    max-width: 1440px;
     height: auto;
     display: block;
+    margin: 0 auto; /* biar center seperti desain Envato */
 }
 </style>
 
 </head>
 <body>
 
-<img src="images/01-Header.jpg" class="section">
-<img src="images/02-About-Me.jpg" class="section">
-<img src="images/03-Creative-Portfolio-Highlights.jpg" class="section">
-<img src="images/04-Core-Creative-Skills.jpg" class="section">
-<img src="images/05-My-Creative-Approach.jpg" class="section">
-<img src="images/05-My-Creative-Approach.jpg" class="section">
-<img src="images/07-Footer.jpg" class="section">
+<div class="section">
+    <img src="images/01-Header.jpg" alt="Header">
+</div>
+
+<div class="section">
+    <img src="images/02-About-Me.jpg" alt="About Me">
+</div>
+
+<div class="section">
+    <img src="images/03-Creative-Portfolio-Highlights.jpg" alt="Portfolio Highlights">
+</div>
+
+<div class="section">
+    <img src="images/04-Core-Creative-Skills.jpg" alt="Core Creative Skills">
+</div>
+
+<div class="section">
+    <img src="images/05-My-Creative-Approach.jpg" alt="Creative Approach">
+</div>
+
+<div class="section">
+    <img src="images/06-Tools-Applications.jpg" alt="Tools & Applications">
+</div>
+
+<div class="section">
+    <img src="images/07-Footer.jpg" alt="Footer">
+</div>
 
 </body>
 </html>
